@@ -9,12 +9,43 @@ t_data    *ft_make_data(void)
     return (data);
 }
 
+t_datab *ft_make_datab(void)
+{
+	t_datab *data_b;
+    data_b = malloc(sizeof(t_data));
+    if (!data_b)
+        exit(1);
+    return (data_b);
+}
+
 void    ft_make_array(t_data *data)
 {
-	data->stack_a = ft_calloc(sizeof(int *), (data->length));
+	data->stack_a = malloc(sizeof(int *)* (data->length));
 	if (!data->stack_a)
 	{
 		free(data);
+		exit(1);
+	}
+}
+
+int    *ft_fill(int *str, int *ptr, int length)
+{
+    int i;
+    i = 0;
+    while (i < length)
+    {
+        str[i] = ptr[i+1];
+        i++;
+    }
+	return (str);
+}
+
+void	ft_make_b_array(t_datab *data_b)
+{
+	data_b->stack_b = malloc(sizeof(int *)* (data_b->length));
+	if (!data_b->stack_b)
+	{
+		free(data_b);
 		exit(1);
 	}
 }
@@ -61,12 +92,12 @@ void	freemystuffchar(char **str, int length)
 	}
 	free(str);
 }
-void	ft_abort(t_data *data)
+void	ft_abort(t_data *data, t_datab *data_b)
 {
 	if (data->stack_a)
 		free(data->stack_a);
-	// if (data->stack_b)
-	// 	free(data->stack_b);
+	if (data_b->stack_b)
+		free(data_b->stack_b);
 	if (data)
 		free(data);
 	ft_printf("ERROR\n");
