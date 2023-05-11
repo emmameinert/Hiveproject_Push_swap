@@ -30,40 +30,42 @@ void    ft_sort_three(t_data *data)
     }
 }
 
+void    ft_find_smallest(t_data *data, t_datab *data_b)
+{
+    int i;
+    int small;
+    i = 0;
+    small = 0;
+    while (i < data->length - 1)
+    {
+        if (data->stack_a[small] < data->stack_a[i + 1])
+            small = small;
+        else
+            small = i + 1;
+        i++;
+    }
+    if (small > 0 && small < 2)
+        ft_ra(data);
+    if (small >= 2)
+    {
+        i = data->length - small;
+        while(i-- > 0)
+            ft_rra(data);
+    }
+    ft_pb(data, data_b);
+}
+
 void    ft_sort_little(t_data *data, t_datab *data_b)
 {
     int count;
-    int i;
-    //look for smallest number first and then push
-    i = 0;
-    ft_printf("length: %d\n", data->length);
+
     count = data->length - 3;
-    while (i++ < count)
-        ft_pb(data, data_b);
-    ft_sort_three(data);
     while (count > 0)
     {
-        ft_printf("count: %d\n", count);
-        if (data_b->stack_b[0] > data->stack_a[2])
-        {
-            ft_pa(data, data_b);
-            ft_ra(data);
-        }
-        else if (data_b->stack_b[0] < data->stack_a[0])
-            ft_pa(data, data_b);
-        else if(data_b->stack_b[0] > data->stack_a[0] && data_b->stack_b[0] < data->stack_a[1])
-        {
-            ft_pa(data, data_b);
-            ft_sa(data);
-        }
-        else if(data_b->stack_b[0] > data->stack_a[1] && data_b->stack_b[0] < data->stack_a[2])
-        {
-            ft_pb(data, data_b);
-            ft_sb(data_b);
-            ft_pa(data, data_b);
-            ft_sa(data);
-            ft_pa(data, data_b);
-        }
+        ft_find_smallest(data, data_b);
         count--;
     }
+    ft_sort_three(data);
+    while (data_b->length > 0)
+        ft_pa(data, data_b);
 }

@@ -12,23 +12,16 @@ void    ft_check_input(t_data *data, t_datab *data_b)
     if (flag == 1)
         ft_abort(data, data_b);
     flag = ft_check_if_sorted(data);
-    ft_printf("flag: %d\n", flag);
     if (flag == 2)
     {
-        while (i < data->length)
-        {
-            ft_printf("        %d\n", data->stack_a[i]);
-            i++;
-        }
-        ft_printf("---Stack_A---\n");// ---Stack_B---\n");
+        // while (i < data->length)
+        // {
+        //     ft_printf("        %d\n", data->stack_a[i]);
+        //     i++;
+        // }
+        // ft_printf("---Stack_A---\n");// ---Stack_B---\n");
         exit(0);
-    } //just return the already sorted stack
-    flag = ft_check_if_rev_sorted(data);
-    if (flag == 3)
-    {
-        return ;
-        //reversed sorted
-    }
+    } 
 }
 
 int    ft_check_doubles(t_data *data)
@@ -40,7 +33,12 @@ int    ft_check_doubles(t_data *data)
     j = -1;
     i = 0;
     temp =  ft_calloc(sizeof(int *), data->length);
-    while (i <= data->length)
+    if (!temp)
+    {
+        free(data);
+        exit(1);
+    }
+    while (i < data->length)
     {
         temp[i] = data->stack_a[i];
         while (j >= 0)
@@ -58,28 +56,6 @@ int    ft_check_doubles(t_data *data)
     free(temp);
     return (0);
 }
-int ft_check_if_rev_sorted(t_data *data)
-{
-    int i;
-    int flag;
-
-    flag = 0;
-    i = 0;
-    if (data->stack_a[0] > data->stack_a[1])
-    {
-        while ((i < data->length - 1) && data->stack_a[i] > data->stack_a[i + 1])
-        {
-            i++;
-            if (i + 1 == data->length)
-            {
-                ft_printf("Reversed sorted\n");
-                return (3); //dann reversed sorted
-            }
-        }
-    }
-    return(0);
-}
-
 
 int    ft_check_if_sorted(t_data *data)
 {
@@ -118,13 +94,20 @@ int    ft_check_if_sorted(t_data *data)
 
 //Mittwoch
 //write rra,  rrb operations    cheeck
-// fix operations
+// fix operations cheeck
 //little sorting    cheeck
-//small sort
+//small sort cheeck
+//convert stack_a to numbers 1-amount for each position
 
 //donnerstag
-//check and catch up with the work
+//bit shifting
+
+//freitag 
+//radix sort
 
 //wochenende
-//radix sort
+////check and catch up with the work
+//fix things 
+
+
 

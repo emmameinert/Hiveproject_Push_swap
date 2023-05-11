@@ -4,12 +4,11 @@ void    ft_count_chars(char **argv, t_data *data, t_datab *data_b)
 {
     int i;
     int j;
-
-    i = 1;
-
-    data->length = 0;
     char    **passed;
     char    **temp;
+
+    i = 1;
+    data->length = 0;
     while (argv[i] != '\0')
     {
         passed = ft_split(argv[i], ' ');
@@ -91,12 +90,6 @@ int main(int argc, char **argv)
     else if (data->length > 3 && data->length <= 5)
         ft_sort_little(data, data_b);
     i = 0;
-    while (i < data->length)
-    {
-        ft_printf("%d\n", data->stack_a[i]);
-        i++;
-    }
-    ft_printf("---Stack_A---\n");// ---Stack_B---\n");
     // i = 0;
     // if (data_b->length > 0)
     // {
@@ -106,8 +99,14 @@ int main(int argc, char **argv)
     //         i++;
     //     }
     // }
-    //sort small amount (<=10)
-    //sort big amount (>10)
+    if (data->length > 5)
+        ft_sort_big_stack(data, data_b);
+    // while (i < data->length)
+    // {
+    //     ft_printf("%d\n", data->stack_a[i]);
+    //     i++;
+    // }
+   // ft_printf("---Stack_A---\n");// ---Stack_B---\n");
     if (data->stack_a)
 		free(data->stack_a);
 	if (data_b->stack_b)

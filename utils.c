@@ -100,6 +100,6 @@ void	ft_abort(t_data *data, t_datab *data_b)
 		free(data_b->stack_b);
 	if (data)
 		free(data);
-	ft_printf("ERROR\n");
+	ft_putendl_fd("Error", 2);
 	exit(1);
 }

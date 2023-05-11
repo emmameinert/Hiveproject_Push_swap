@@ -8,7 +8,7 @@ typedef struct s_data
 {
 	int length;
     int *stack_a;
-
+    int bits;
 }   t_data;
 
 typedef struct s_datab
@@ -28,7 +28,6 @@ void    ft_fill_array(char **argv, t_data *data, t_datab *data_b);
 int     ft_check_doubles(t_data *data);
 void    ft_count_chars(char **argv, t_data *data, t_datab *data_b);
 int     ft_check_if_sorted(t_data *data);
-int     ft_check_if_rev_sorted(t_data *data);
 
 //freeing
 void	freemystuffchar(char **str, int length);
@@ -64,4 +63,14 @@ void    ft_rrr(t_data *data, t_datab *data_b);
 void    ft_sort_two(t_data *data);
 void    ft_sort_three(t_data *data);
 void    ft_sort_little(t_data *data, t_datab *data_b);
+void    ft_find_smallest(t_data *data, t_datab *data_b);
+
+//radix sorting
+
+void    ft_convert_for_radix(t_data *data);
+void    ft_sort(int *a, int len);
+int     ft_binary(int n);
+void    ft_radix(t_data *data, t_datab *data_b);
+void    ft_sort_big_stack(t_data *data, t_datab *data_b);
+
 #endif
