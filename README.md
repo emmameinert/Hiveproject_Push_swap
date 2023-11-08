@@ -11,7 +11,7 @@ With less or equal to 5 numbers I have combinations for three numbers sorting. F
 For more than 5 numbers I used the radix sorting algorithm explained below.
 To use the radix sort algorithm I convert my integers to binary numbers. For not having negatives or missing numbers in my stack, I make a copy of my stack A and sort the copy recursively.
 
-After that I compare the original stack A with my copy and give each value a new number form 1 to amount of numbers. This new stack A can now be converted easily to binary numbers.
+After that I compare the original stack A with my copy and give each value a new number form 1 to amount of numbers. This new stack A can now be converted easily to binary numbers. It is still unsorted but only contains numbers from 1 to the amount of numbers.
 
 ## Operations
 
