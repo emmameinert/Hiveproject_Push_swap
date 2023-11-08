@@ -1,8 +1,9 @@
 
 NAME = push_swap
 
-SRC = pushswap parsing utils sort_little \
-		operations_ps operations_r operations_rr operations_s
+SRC = pushswap parsing utils sort_little radix memory \
+		operations_pa operations_pb parsing2\
+		operations_r operations_rr operations_s ft_atol
 HEADER = pushswap.h
 
 CC = cc 
@@ -27,5 +28,6 @@ clean:
 	
 fclean: clean	
 			rm -f $(NAME)
+			cd $(LIBFT) && $(MAKE) fclean
 
 re: fclean all 
