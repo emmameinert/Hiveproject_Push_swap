@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   memory.c                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: emeinert <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: emeinert <emeinert@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/12 15:22:08 by emeinert          #+#    #+#             */
-/*   Updated: 2023/05/12 15:24:21 by emeinert         ###   ########.fr       */
+/*   Updated: 2023/11/08 13:59:09 by emeinert         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "pushswap.h"
+#include "../../headers/pushswap.h"
 
 t_data	*ft_make_data(void)
 {

@@ -6,14 +6,14 @@
 /*   By: emeinert <emeinert@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/12 16:37:25 by emeinert          #+#    #+#             */
-/*   Updated: 2023/05/18 11:52:35 by emeinert         ###   ########.fr       */
+/*   Updated: 2023/11/08 14:03:24 by emeinert         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef PUSHSWAP_H
 # define PUSHSWAP_H
 
-# include  "./sources/libft/libft.h"
+# include  "../sources/libft/libft.h"
 
 typedef struct s_data
 {

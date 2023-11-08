@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   operations_pb.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: emeinert <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: emeinert <emeinert@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/12 15:33:53 by emeinert          #+#    #+#             */
-/*   Updated: 2023/05/12 15:40:34 by emeinert         ###   ########.fr       */
+/*   Updated: 2023/11/08 13:59:41 by emeinert         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "pushswap.h"
+#include "../../headers/pushswap.h"
 
 void	ft_put_to_b(t_datab *data_b, t_data *data)
 {

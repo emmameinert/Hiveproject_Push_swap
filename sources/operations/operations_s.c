@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   operations_s.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: emeinert <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: emeinert <emeinert@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/12 16:18:01 by emeinert          #+#    #+#             */
-/*   Updated: 2023/05/12 16:19:20 by emeinert         ###   ########.fr       */
+/*   Updated: 2023/11/08 13:59:34 by emeinert         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "pushswap.h"
+#include "../../headers/pushswap.h"
 
 void	ft_swap(int *a, int *b)
 {

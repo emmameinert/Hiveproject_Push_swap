@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   operations_rr.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: emeinert <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: emeinert <emeinert@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/12 16:14:53 by emeinert          #+#    #+#             */
-/*   Updated: 2023/05/12 16:17:51 by emeinert         ###   ########.fr       */
+/*   Updated: 2023/11/08 13:59:36 by emeinert         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "pushswap.h"
+#include "../../headers/pushswap.h"
 
 void	ft_rra(t_data *data)
 {

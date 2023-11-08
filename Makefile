@@ -1,9 +1,11 @@
 
 NAME = push_swap
 
-SRC = pushswap parsing utils sort_little radix memory \
-		operations_pa operations_pb parsing2\
-		operations_r operations_rr operations_s ft_atol
+SRC = pushswap ./sources/parsing/parsing ./sources/utils/utils ./sources/sorting/sort_little \
+		./sources/sorting/radix ./sources/utils/memory \
+		./sources/operations/operations_pa ./sources/operations/operations_pb ./sources/parsing/parsing2 \
+		./sources/operations/operations_r ./sources/operations/operations_rr ./sources/operations/operations_s ./sources/utils/ft_atol \
+
 HEADER = pushswap.h
 
 CC = cc 

@@ -6,11 +6,11 @@
 /*   By: emeinert <emeinert@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/12 16:55:29 by emeinert          #+#    #+#             */
-/*   Updated: 2023/05/18 11:53:03 by emeinert         ###   ########.fr       */
+/*   Updated: 2023/11/08 13:59:14 by emeinert         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "pushswap.h"
+#include "../../headers/pushswap.h"
 
 int	*ft_fill(int *str, int *ptr, int length)
 {

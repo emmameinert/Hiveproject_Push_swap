@@ -6,11 +6,11 @@
 /*   By: emeinert <emeinert@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/18 11:58:32 by emeinert          #+#    #+#             */
-/*   Updated: 2023/05/18 14:05:08 by emeinert         ###   ########.fr       */
+/*   Updated: 2023/11/08 13:59:27 by emeinert         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "pushswap.h"
+#include "../../headers/pushswap.h"
 
 int	ft_is_number(char *str)
 {

@@ -6,11 +6,11 @@
 /*   By: emeinert <emeinert@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/12 16:19:31 by emeinert          #+#    #+#             */
-/*   Updated: 2023/05/18 11:50:59 by emeinert         ###   ########.fr       */
+/*   Updated: 2023/11/08 13:59:30 by emeinert         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "pushswap.h"
+#include "../../headers/pushswap.h"
 
 void	ft_check_input(t_data *data, t_datab *data_b)
 {

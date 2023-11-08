@@ -6,11 +6,11 @@
 /*   By: emeinert <emeinert@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/12 16:48:43 by emeinert          #+#    #+#             */
-/*   Updated: 2023/05/15 13:22:26 by emeinert         ###   ########.fr       */
+/*   Updated: 2023/11/08 13:59:21 by emeinert         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "pushswap.h"
+#include "../../headers/pushswap.h"
 
 void	ft_sort_two(t_data *data)
 {

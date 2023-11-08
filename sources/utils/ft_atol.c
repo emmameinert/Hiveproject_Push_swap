@@ -6,11 +6,11 @@
 /*   By: emeinert <emeinert@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/12 15:20:45 by emeinert          #+#    #+#             */
-/*   Updated: 2023/05/18 11:47:34 by emeinert         ###   ########.fr       */
+/*   Updated: 2023/11/08 13:59:18 by emeinert         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "pushswap.h"
+#include "../../headers/pushswap.h"
 
 long	ft_check_char(const char *str, int i, long sign, long result)
 {
