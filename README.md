@@ -2,6 +2,7 @@
 
 Push_swap is an introduction to the world of numbers and algorithms.
 Using a certain set of operations it aims to sort numbers with only two stacks.
+The programm displays the operations, which were used to sort the numbers.
 
 ## My approach
 
@@ -32,7 +33,7 @@ rr : ra and rb at the same time.
 
 ## Algorithm - Radix sort 
 
-Radix sort is a non comperative sorting algorithm with a perfomance of O(nw), with n as the amount of numbers and w the length of those numbers. It goes through the order of numbers digit by digit starting with the last and sorting them into buckets. 
+Radix sort is a non comperative sorting algorithm with a perfomance of O(nw), with n as the amount of numbers and w the length of those numbers. It goes through the order of numbers digit by digit starting with the last and sorting them into buckets. The more and higher numbers there are, the longer the algorithm takes. In the case of push swap this is illustrated by the operations that are printed out.
 
 ## Using radix sort with binary numbers
 
