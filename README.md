@@ -29,7 +29,8 @@ ss : sa and sb at the same time.
 
 rr : ra and rb at the same time.
 
-## Algorithm
+## Algorithm - Radix sort 
 
+Radix sort is a non comperative sorting algorithm with a perfomance of O(nw), with n as the amount of numbers and w the length of those numbers.
 
 
