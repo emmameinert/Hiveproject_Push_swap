@@ -9,7 +9,7 @@ The programm displays the operations, which were used to sort the numbers.
 I divided my sorting in two parts: More numbers than 5 and less or equal to 5. 
 With less or equal to 5 numbers I have combinations for three numbers sorting. For a greater amount of three I search for the smallest numbers and push them to b until I am down to a 3 number sorting again. Afterwards the numbers from stack b get pushed to a again.
 
-For more than 5 numbers I used the radix sorting algorithm explained below. 
+For more than 5 numbers I used the [radix sorting algorithm](https://www.geeksforgeeks.org/radix-sort/) explained below. 
 
 To use the algorithm I convert my integers to binary numbers. For not having negatives in my stack, I make a copy of my stack A and sort the copy recursively.
 
